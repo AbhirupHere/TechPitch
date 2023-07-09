@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 
 import { addBlog } from "../actions/blogPost";
 
-class WritePost extends React.Component {
+class WriteBlog extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -27,7 +27,9 @@ class WritePost extends React.Component {
   };
 
   handleContentChange = (e) => {
-    this.setState({ content: e.target.value });
+    const { value } = e.target;
+    const updatedContent = value.replace(/\n/g, "<br/>");
+    this.setState({ content: updatedContent });
   };
 
   handleSubmit = (e) => {
@@ -41,7 +43,7 @@ class WritePost extends React.Component {
 
   render() {
     const { author, title, headerImage, content } = this.state;
-    const renderedContent = content.replace(/\n/g, "<br>");
+    const renderedContent = content.replace(/<br\/>/g, "\n");
 
     return (
       <div className="blog-write">
@@ -72,10 +74,17 @@ class WritePost extends React.Component {
             placeholder="You can add a header image link for your blog"
           />
           <textarea
-          className="blog-content"
-            value={content}
+            className="blog-content"
+            value={renderedContent}
             required
             onChange={this.handleContentChange}
+            onKeyDown={(e) => {
+              if (e.keyCode === 13) {
+                e.preventDefault();
+                const updatedContent = `${e.target.value}\n<br/>`;
+                this.setState({ content: updatedContent });
+              }
+            }}
             placeholder="Write your blog content here..."
           />
           <button type="submit">Publish</button>
@@ -83,7 +92,7 @@ class WritePost extends React.Component {
 
         <div>
           <h2>{title}</h2>
-          <div dangerouslySetInnerHTML={{ __html: renderedContent }}></div>
+          <div dangerouslySetInnerHTML={{ __html: content }}></div>
         </div>
       </div>
     );
@@ -95,4 +104,4 @@ const mapStateToProps = (state) => {
     auth: state.auth,
   };
 };
-export default connect(mapStateToProps)(WritePost);
+export default connect(mapStateToProps)(WriteBlog);
