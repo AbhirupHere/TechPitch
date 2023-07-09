@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "//abhiruphere.github.io/TechPitch/static/css/main.7e3bab3d.css",
-    "main.js": "//abhiruphere.github.io/TechPitch/static/js/main.9e7f0ba4.js",
+    "main.js": "//abhiruphere.github.io/TechPitch/static/js/main.a06db79f.js",
     "index.html": "//abhiruphere.github.io/TechPitch/index.html",
     "main.7e3bab3d.css.map": "//abhiruphere.github.io/TechPitch/static/css/main.7e3bab3d.css.map",
-    "main.9e7f0ba4.js.map": "//abhiruphere.github.io/TechPitch/static/js/main.9e7f0ba4.js.map"
+    "main.a06db79f.js.map": "//abhiruphere.github.io/TechPitch/static/js/main.a06db79f.js.map"
   },
   "entrypoints": [
     "static/css/main.7e3bab3d.css",
-    "static/js/main.9e7f0ba4.js"
+    "static/js/main.a06db79f.js"
   ]
 }
