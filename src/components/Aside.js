@@ -34,7 +34,7 @@ class Aside extends Component {
                         <p><Link to='/post/Ys3pGXb3gLU1nEKbulPS'>Useful Tools that Every Web Developer Must Know</Link></p>
                     </li>
                     <li>
-                        <p><Link to='/post/VclHvtoaLkWID6eRNe81'>The Art of Responsive Web Design: Crafting Websites for All Devices</Link></p>
+                        <p><Link to='/post/tJicOTrIi5ryRCe7EYNy'>The Art of Responsive Web Design: Crafting Websites for All Devices</Link></p>
                     </li>
                     <li>
                         <p><a href="https://www.exampleblog.com">10 Essential JavaScript Libraries for Front-End Development</a></p>
