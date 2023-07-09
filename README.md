@@ -1,6 +1,17 @@
 # Getting Started with Create React App
 
+### Checkout the live Project Here: [Live Project](https://abhiruphere.github.io/TechPitch).
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## TechPitch - A Full-Stack Blog Post App :
+• Developed a full-stack blog post application, leveraging React.js, Redux.js, and Firebase, to provide a platform
+for users to read and publish technology-focused blogs.<br/>
+• Implemented user authentication using Firebase’s email and password authentication mechanism, ensuring secure
+access to the application’s features and allowing users to create accounts and log in securely.<br/>
+• Designed an intuitive and responsive user interface, optimized for various devices, to deliver an engaging and
+seamless reading experience for tech enthusiasts, enabling them to explore and share knowledge within the tech
+community.
 
 ## Available Scripts
 
